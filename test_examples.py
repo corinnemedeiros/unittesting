@@ -54,7 +54,7 @@ class TestContact(unittest.TestCase):
 	def test_add_hobby_already_in_list(self):
 		self.contact_Madhan.add_hobby("tennis")
 		self.assertEqual(len(self.contact_Madhan.hobbies), 1)
-		self.assertListEqual(self.contact_Madhan.hobbies), ["tennis"])
+		self.assertListEqual(self.contact_Madhan.hobbies, ["tennis"])
 
 
 if __name__ == '__main__':
